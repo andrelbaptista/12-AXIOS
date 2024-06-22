@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Axios</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- tem que vir abaixo para carregar o AXIOS primeiro -->
+
+
+
+     <!-- <script src="js/global.js"></script> -->
+
+
+
+     <script src="js/custom.js"></script>
+     <script src="js/interceptors.js"></script>
+     <!-- asconfigurações do AXIOS devem ser depois do seu carregamento e antes do script do projeto
+      geralmente se usa a CUSTOM ao invés da GLOBAL -->
+
+
+
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <h1>Axios</h1>
+    <!-- post -->
+    <h2>Insira novo Post:</h2>
+    <form id="post-form">
+      <div>
+        <input
+          type="text"
+          name="title"
+          id="title"
+          placeholder="Digite o título"
+        />
+        <div>
+            <textarea name="body" id="body"></textarea>
+        </div>
+        <input type="submit" value="Criar Post" />
+      </div>
+    </form>
+    <!-- inserindo dados -->
+    <div id="users-container"></div>
+  </body>
+</html>
